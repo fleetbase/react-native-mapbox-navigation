@@ -1,9 +1,9 @@
 /** @type {[number, number]}
  * Provide an array with longitude and latitude [$longitude, $latitude]
  */
-type Coordinate = [number, number];
-type Padding = [number, number, number, number];
-type OnLocationChangeEvent = {
+declare type Coordinate = [number, number];
+declare type Padding = [number, number, number, number];
+declare type OnLocationChangeEvent = {
     nativeEvent?: {
         latitude: number;
         longitude: number;
@@ -12,19 +12,19 @@ type OnLocationChangeEvent = {
         bearing: number;
     };
 };
-type OnTrackingStateChangeEvent = {
+declare type OnTrackingStateChangeEvent = {
     nativeEvent?: {
         state: string;
     };
 };
-type OnRouteChangeEvent = {
+declare type OnRouteChangeEvent = {
     nativeEvent?: {
         distance: number;
         expectedTravelTime: number;
         typicalTravelTime: number;
     };
 };
-type OnRouteProgressChangeEvent = {
+declare type OnRouteProgressChangeEvent = {
     nativeEvent?: {
         distanceTraveled: number;
         distanceRemaining: number;
@@ -33,12 +33,12 @@ type OnRouteProgressChangeEvent = {
         progress: number;
     };
 };
-type OnErrorEvent = {
+declare type OnErrorEvent = {
     nativeEvent?: {
         message?: string;
     };
 };
-type OnManeuverSizeChangeEvent = {
+declare type OnManeuverSizeChangeEvent = {
     nativeEvent?: {
         width?: number;
         height?: number;

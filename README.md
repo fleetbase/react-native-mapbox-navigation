@@ -28,7 +28,7 @@ Before installing the SDK, you will need to gather the appropriate credentials. 
 ## Installation
 
 ```
-npm install https://github.com/fleetbase/react-native-mapbox-navigation.git
+yarn add @fleetbase/react-native-mapbox-navigation
 ```
 
 Read the iOS specific instructions below before running `pod install`.
