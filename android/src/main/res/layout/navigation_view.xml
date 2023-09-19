@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        
+    <androidx.cardview.widget.CardView
+        android:id="@+id/maneuverContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="26dp"
+        app:cardBackgroundColor="#303030"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.mapbox.navigation.ui.maneuver.view.MapboxManeuverView
+            android:id="@+id/maneuverView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MapboxCustomManeuverStyle" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.mapbox.navigation.ui.status.view.MapboxStatusView
+        android:id="@+id/statusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="0dp"
+        android:background="@drawable/status_bg"
+        app:statusViewProgressBarTint="#FFFFFF"
+        app:statusViewIconTint="#FFFFFF"
+        app:statusViewTextAppearance="@style/StatusViewTextAppearance"
+        app:statusViewShowAnimator="@animator/scale_in"
+        app:statusViewHideAnimator="@animator/scale_out"
+        app:layout_constraintTop_toBottomOf="@id/maneuverContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.mapbox.navigation.ui.speedlimit.view.MapboxSpeedLimitView
+        android:id="@+id/speedLimitView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maneuverContainer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <style name="MapboxCustomManeuverTurnIconStyle" parent="MapboxStyleTurnIconManeuver">
+    </style>
+
+    <style name="MapboxCustomManeuverStyle" parent="MapboxStyleManeuverView">
+        <item name="maneuverViewIconStyle">@style/MapboxCustomManeuverTurnIconStyle</item>
+        <item name="laneGuidanceManeuverIconStyle">@style/MapboxCustomManeuverTurnIconStyle</item>
+    </style>
+
+    <style name="PrimaryManeuverTextAppearance" parent="TextAppearance.AppCompat">
+    </style>
+
+    <style name="SecondaryManeuverTextAppearance" parent="TextAppearance.AppCompat">
+    </style>
+
+    <style name="SubManeuverTextAppearance" parent="TextAppearance.AppCompat">
+    </style>
+
+    <style name="StepDistanceTextAppearance" parent="TextAppearance.AppCompat">
+    </style>
+
+    <style name="UpcomingPrimaryManeuverTextAppearance" parent="TextAppearance.AppCompat">
+    </style>
+
+    <style name="UpcomingSecondaryManeuverTextAppearance" parent="TextAppearance.AppCompat">
+    </style>
+
+    <style name="UpcomingManeuverStepDistanceTextAppearance" parent="TextAppearance.AppCompat">
+    </style>
+
+    <style name="StatusViewTextAppearance">
+    </style>
+</resources>
