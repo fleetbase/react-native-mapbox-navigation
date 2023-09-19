@@ -65,7 +65,7 @@ import com.mapbox.navigation.core.trip.session.LocationMatcherResult
 import com.mapbox.navigation.core.trip.session.LocationObserver
 import com.mapbox.navigation.core.trip.session.RouteProgressObserver
 import com.mapbox.navigation.core.trip.session.VoiceInstructionsObserver
-import com.fleetbase.mapboxnavigation.databinding.NavigationViewBinding
+import com.hollertaxi.mapboxnavigation.databinding.NavigationViewBinding
 import com.mapbox.navigation.base.trip.model.RouteLegProgress
 import com.mapbox.navigation.base.trip.model.RouteProgress
 import com.mapbox.navigation.core.arrival.ArrivalObserver
@@ -419,11 +419,11 @@ class MapboxNavigationFreeDriveView(private val context: ThemedReactContext, pri
             event.putDouble("latitude", enhancedLocation.latitude)
 
             if (enhancedLocation.hasBearing()) {
-                event.putFloat("bearing", enhancedLocation.getBearing())
+                event.putDouble("bearing", enhancedLocation.getBearing().toDouble())
             }
 
             if (enhancedLocation.hasSpeed()) {
-                event.putFloat("speed", enhancedLocation.getSpeed())
+                event.putDouble("speed", enhancedLocation.getSpeed().toDouble())
             }
 
             context
@@ -475,11 +475,11 @@ class MapboxNavigationFreeDriveView(private val context: ThemedReactContext, pri
 
         // route progress change event
         val event = Arguments.createMap()
-        event.putFloat("distanceTraveled", routeProgress.distanceTraveled)
-        event.putFloat("distanceRemaining", routeProgress.distanceRemaining)
-        event.putDouble("timeTraveled", 0)
+        event.putDouble("distanceTraveled", routeProgress.distanceTraveled.toDouble())
+        event.putDouble("distanceRemaining", routeProgress.distanceRemaining.toDouble())
+        event.putDouble("timeTraveled", 0.0)
         event.putDouble("timeRemaining", routeProgress.durationRemaining)
-        event.putFloat("progress", routeProgress.fractionTraveled)
+        event.putDouble("progress", routeProgress.fractionTraveled.toDouble())
 
         context
             .getJSModule(RCTEventEmitter::class.java)
@@ -538,7 +538,7 @@ class MapboxNavigationFreeDriveView(private val context: ThemedReactContext, pri
         val event = Arguments.createMap()
         event.putDouble("distance", routeUpdateResult.routes.first().distance())
         event.putDouble("expectedTravelTime", routeUpdateResult.routes.first().duration())
-        event.putDouble("typicalTravelTime", routeUpdateResult.routes.first().durationTypical())
+        event.putDouble("typicalTravelTime", routeUpdateResult.routes.first().durationTypical()!!)
 
         context
             .getJSModule(RCTEventEmitter::class.java)
