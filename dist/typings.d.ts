@@ -1,9 +1,10 @@
+import { StyleProp, ViewStyle } from 'react-native';
 /** @type {[number, number]}
  * Provide an array with longitude and latitude [$longitude, $latitude]
  */
-declare type Coordinate = [number, number];
-declare type Padding = [number, number, number, number];
-declare type OnLocationChangeEvent = {
+type Coordinate = [number, number];
+type Padding = [number, number, number, number];
+type OnLocationChangeEvent = {
     nativeEvent?: {
         latitude: number;
         longitude: number;
@@ -12,19 +13,19 @@ declare type OnLocationChangeEvent = {
         bearing: number;
     };
 };
-declare type OnTrackingStateChangeEvent = {
+type OnTrackingStateChangeEvent = {
     nativeEvent?: {
         state: string;
     };
 };
-declare type OnRouteChangeEvent = {
+type OnRouteChangeEvent = {
     nativeEvent?: {
         distance: number;
         expectedTravelTime: number;
         typicalTravelTime: number;
     };
 };
-declare type OnRouteProgressChangeEvent = {
+type OnRouteProgressChangeEvent = {
     nativeEvent?: {
         distanceTraveled: number;
         distanceRemaining: number;
@@ -33,12 +34,12 @@ declare type OnRouteProgressChangeEvent = {
         progress: number;
     };
 };
-declare type OnErrorEvent = {
+type OnErrorEvent = {
     nativeEvent?: {
         message?: string;
     };
 };
-declare type OnManeuverSizeChangeEvent = {
+type OnManeuverSizeChangeEvent = {
     nativeEvent?: {
         width?: number;
         height?: number;
@@ -56,6 +57,7 @@ export interface IMapboxNavigationProps {
     showsEndOfRouteFeedback?: boolean;
     hideStatusView?: boolean;
     mute?: boolean;
+    style?: StyleProp<ViewStyle>;
 }
 export interface IMapboxNavigationFreeDriveProps {
     onLocationChange?: (event: OnLocationChangeEvent) => void;

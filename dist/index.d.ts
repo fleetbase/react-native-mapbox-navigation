@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { IMapboxNavigationProps, IMapboxNavigationFreeDriveProps } from './typings';
+import { IMapboxNavigationProps } from './typings';
 declare const MapboxNavigation: (props: IMapboxNavigationProps) => React.JSX.Element;
-declare const MapboxNavigationFreeDrive: React.ForwardRefExoticComponent<IMapboxNavigationFreeDriveProps & React.RefAttributes<unknown>>;
-export { MapboxNavigation, MapboxNavigationFreeDrive };
+export default MapboxNavigation;
