@@ -10,9 +10,6 @@
 		957B881A244753D70058C6C1 /* MapboxNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B8816244753D70058C6C1 /* MapboxNavigationView.swift */; };
 		957B881C244753D70058C6C1 /* MapboxNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 957B8818244753D70058C6C1 /* MapboxNavigationManager.m */; };
 		957B881D244753D70058C6C1 /* MapboxNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B8819244753D70058C6C1 /* MapboxNavigationManager.swift */; };
-		957B881E244753D70058C6C1 /* MapboxNavigationFreeDriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B8820244753D70058C6C1 /* MapboxNavigationFreeDriveView.swift */; };
-		957B881F244753D70058C6C1 /* MapboxNavigationFreeDriveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 957B8821244753D70058C6C1 /* MapboxNavigationFreeDriveManager.m */; };
-		957B881G244753D70058C6C1 /* MapboxNavigationFreeDriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B8822244753D70058C6C1 /* MapboxNavigationFreeDriveManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,9 +30,6 @@
 		957B8816244753D70058C6C1 /* MapboxNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxNavigationView.swift; sourceTree = "<group>"; };
 		957B8818244753D70058C6C1 /* MapboxNavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapboxNavigationManager.m; sourceTree = "<group>"; };
 		957B8819244753D70058C6C1 /* MapboxNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxNavigationManager.swift; sourceTree = "<group>"; };
-		957B8820244753D70058C6C1 /* MapboxNavigationFreeDriveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxNavigationFreeDriveView.swift; sourceTree = "<group>"; };
-		957B8821244753D70058C6C1 /* MapboxNavigationFreeDriveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapboxNavigationFreeDriveManager.m; sourceTree = "<group>"; };
-		957B8822244753D70058C6C1 /* MapboxNavigationFreeDriveManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxNavigationFreeDriveManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +57,6 @@
 				957B8818244753D70058C6C1 /* MapboxNavigationManager.m */,
 				957B8819244753D70058C6C1 /* MapboxNavigationManager.swift */,
 				957B8816244753D70058C6C1 /* MapboxNavigationView.swift */,
-				957B8821244753D70058C6C1 /* MapboxNavigationFreeDriveManager.m */,
-				957B8822244753D70058C6C1 /* MapboxNavigationFreeDriveManager.swift */,
-				957B8820244753D70058C6C1 /* MapboxNavigationFreeDriveView.swift */,
 				957B8815244753D60058C6C1 /* MapboxNavigation-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
@@ -132,9 +123,6 @@
 				957B881C244753D70058C6C1 /* MapboxNavigationManager.m in Sources */,
 				957B881D244753D70058C6C1 /* MapboxNavigationManager.swift in Sources */,
 				957B881A244753D70058C6C1 /* MapboxNavigationView.swift in Sources */,
-				957B881F244753D70058C6C1 /* MapboxNavigationFreeDriveManager.m in Sources */,
-				957B881G244753D70058C6C1 /* MapboxNavigationFreeDriveManager.swift in Sources */,
-				957B881E244753D70058C6C1 /* MapboxNavigationFreeDriveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

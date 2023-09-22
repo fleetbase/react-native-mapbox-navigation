@@ -1,4 +1,3 @@
-import { StyleProp, ViewStyle } from 'react-native';
 /** @type {[number, number]}
  * Provide an array with longitude and latitude [$longitude, $latitude]
  */
@@ -64,7 +63,6 @@ export interface IMapboxNavigationProps {
     showsEndOfRouteFeedback?: boolean;
     hideStatusView?: boolean;
     mute?: boolean;
-    style?: StyleProp<ViewStyle>;
 }
 
 export interface IMapboxNavigationFreeDriveProps {
