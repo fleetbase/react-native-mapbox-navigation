@@ -1,6 +1,4 @@
+import * as React from 'react';
 import { IMapboxNavigationProps } from './typings';
-declare const MapboxNavigation: (props: IMapboxNavigationProps) => any;
-export declare const TestFunction: (x: any, y: any) => number;
-export declare const Hello: (who: any) => string;
-export declare const HelloLog: (who: any) => void;
+declare const MapboxNavigation: (props: IMapboxNavigationProps) => React.JSX.Element;
 export default MapboxNavigation;
